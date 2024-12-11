@@ -1,0 +1,13 @@
+[Unit]
+Description=Register name, ip, mac to a local statis ip server
+After=network.target
+
+
+[Service]
+ExecStart=/usr/bin/python3 */path/to/*client.py
+WorkingDirectory=*/path/to/*
+Restart=always
+User=root
+
+[Install]
+WantedBy=multi-user.target
